@@ -1,0 +1,18 @@
+
+<div style="    display: flex;
+align-items: center;
+height: 100vh;
+justify-content: center; overflow: hidden;">
+  <div class="wrapper">
+    <h1 style="margin-bottom: 20px;">Hello Again!</h1>
+    <form (ngSubmit)="login()">
+      <input type="text" id="email" [(ngModel)]="credentials.email" name="email" placeholder="Enter Email">
+      <input type="password" id="password" [(ngModel)]="credentials.password" name="password" placeholder="Password">
+      <button type="submit">Sign in</button>
+    </form>
+  
+    <div class="not-member">
+      Not a member? <a href="#">Sign Up</a>
+    </div>
+  </div>
+</div>

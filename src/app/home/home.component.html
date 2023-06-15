@@ -1,0 +1,5 @@
+<div>
+    <button *ngIf="!isLoggedIn()" (click)="goToLogin()">Login</button>
+    <button *ngIf="isLoggedIn()" (click)="goToDashboard()">Dashboard</button>
+  </div>
+  

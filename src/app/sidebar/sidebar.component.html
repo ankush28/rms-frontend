@@ -1,0 +1,70 @@
+<nav [class.open]="addClass">
+    <div class="logo">
+      <i (click)="toggleClass()" class="bx bx-menu menu-icon"></i>
+    </div>
+    <div class="sidebar">
+        <i (click)="toggleClass()" style=" font-size: 32px;
+        position: absolute;
+        top: 5px;
+        right: 5px; cursor: pointer;" class='bx bx-x bx-rotate-90' ></i>
+      <!-- <div style="align-items: center;
+      margin: 0 24px; font-size: 24px;">
+        <span class="logo-name">DineWise</span>
+      </div> -->
+      <div class="sidebar-content">
+        <ul class="lists">
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="link">Dashboard</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="link">Revenue</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-bell icon"></i>
+              <span class="link">Notifications</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-message-rounded icon"></i>
+              <span class="link">Messages</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-pie-chart-alt-2 icon"></i>
+              <span class="link">Analytics</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-heart icon"></i>
+              <span class="link">Likes</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#" class="nav-link">
+              <i class="bx bx-folder-open icon"></i>
+              <span class="link">Files</span>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-cotent">
+          
+          <li class="list">
+            <a [routerLink]="['/login']" class="nav-link">
+              <i class="bx bx-log-out icon"></i>
+              <span  class="link">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+</nav>
